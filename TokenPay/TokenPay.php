@@ -15,12 +15,9 @@ use Exception;
 
 class TokenPay
 {
-    public static function getAutoFormHtml(&$params, $uri)
+    public static function getAutoFormHtml($params, $uri)
     {
-//        $result = Sign::sign($params);
-//        if (!$result) {
-//            throw new Exception("签名失败");
-//        }
+
         $html = self::createAutoFormHtml($params, $uri);
         return $html;
 
